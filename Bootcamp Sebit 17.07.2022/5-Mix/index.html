@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .imgMainDiv {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px;
+      }
+
+      .imgDiv {
+        border: 1px solid black;
+        width: 200px;
+        border-radius: 30px;
+        margin-right: 30px;
+      }
+
+      .efso {
+        border-radius: 30px 30px 0px 0px;
+        width: 100%;
+      }
+
+      .imgDiv h3 {
+        text-align: center;
+      }
+
+      .imgDiv p {
+        padding: 0px 20px;
+      }
+
+      .formGeneral {
+        background-color: gray;
+        padding: 50px;
+        margin: 10px 350px;
+      }
+
+      .formElement {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 8px 0px;
+        box-sizing: border-box;
+        border: 1px solid red;
+      }
+      .formSubmit {
+        width: 100%;
+        padding: 13px;
+        background-color: lightgreen;
+        border: none;
+        border-radius: 15px;
+        color: white;
+      }
+      .formElement:focus {
+        background-color: red;
+      }
+      .formElement:hover {
+        background-color: lightgreen;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        background-color: pink;
+        align-items: center;
+        padding: 0px 15px;
+      }
+
+      .headerLink {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        margin-right: 13px;
+      }
+
+      .footerMain {
+        display: flex;
+        justify-content: space-between;
+        background-color: pink;
+        margin-top: 20px;
+        font-size: 16px;
+        color: black;
+      }
+
+      .footerLeft,
+      .footerRight {
+        margin: 0px 20px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .imgMainDiv {
+          flex-direction: column;
+        }
+        .imgDiv {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        .formGeneral {
+          margin: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <img src="1.jpg" alt="" width="40px" style="border-radius: 5px" />
+      </div>
+      <div>
+        <a href="" class="headerLink">Home</a>
+        <a href="" class="headerLink">About</a>
+        <a href="" class="headerLink">Contact</a>
+      </div>
+    </div>
+
+    <div
+      style="
+        background-image: url('banner.jpg');
+        height: 400px;
+        position: relative;
+      "
+    >
+      <div
+        style="position: absolute; width: 100%; text-align: center; top: 50px"
+      >
+        <h3>Efsane Banner</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, odio.
+          Deserunt, aut! Doloribus deleniti pariatur eius, accusamus quibusdam
+          odio nostrum vero dolore dicta, quaerat ullam eaque? Officiis adipisci
+          modi dolore?
+        </p>
+      </div>
+    </div>
+    <div class="imgMainDiv">
+      <div class="imgDiv">
+        <img class="efso" src="1.jpg" />
+        <h3>Efso Başlık</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero
+          error tenetur. Magnam nostrum ab aperiam eveniet corporis impedit esse
+          dicta error distinctio quos consequuntur nesciunt et placeat, iure
+          eius.
+        </p>
+      </div>
+
+      <div class="imgDiv">
+        <img class="efso" src="2.jpg" />
+        <h3>Efso Başlık</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero
+          error tenetur. Magnam nostrum ab aperiam eveniet corporis impedit esse
+          dicta error distinctio quos consequuntur nesciunt et placeat, iure
+          eius.
+        </p>
+      </div>
+
+      <div class="imgDiv">
+        <img class="efso" src="3.jpg" />
+        <h3>Efso Başlık</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero
+          error tenetur. Magnam nostrum ab aperiam eveniet corporis impedit esse
+          dicta error distinctio quos consequuntur nesciunt et placeat, iure
+          eius.
+        </p>
+      </div>
+
+      <div class="imgDiv">
+        <img class="efso" src="4.jpg" />
+        <h3>Efso Başlık</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vero
+          error tenetur. Magnam nostrum ab aperiam eveniet corporis impedit esse
+          dicta error distinctio quos consequuntur nesciunt et placeat, iure
+          eius.
+        </p>
+      </div>
+    </div>
+    <div>
+      <form class="formGeneral">
+        <label>Ad</label>
+        <input
+          type="text"
+          class="formElement"
+          name="firstName"
+          placeholder="Adınızı Giriniz"
+        />
+        <label>Soyad</label>
+        <input
+          type="text"
+          class="formElement"
+          name="lastName"
+          placeholder="Soyadınızı Giriniz"
+        />
+        <label>Şehirler</label>
+        <select class="formElement" name="country">
+          <option value="tr">Türkiye</option>
+          <option value="fr">Français</option>
+          <option value="en">England</option>
+        </select>
+        <input class="formSubmit" type="submit" value="Kaydet" />
+      </form>
+    </div>
+
+    <div class="footerMain">
+      <div class="footerLeft">
+        <p>Sebit Frontend Bootcamp - 2022</p>
+      </div>
+      <div class="footerRight">
+        <p>All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

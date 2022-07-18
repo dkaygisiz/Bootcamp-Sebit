@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="
+        background-image: url('banner.jpg');
+        height: 400px;
+        position: relative;
+      "
+    >
+      <div
+        style="position: absolute; width: 100%; text-align: center; top: 50px"
+      >
+        <h3>Efsane Banner</h3>
+        <!-- bir element içerisinde başka bir elementi hizalamak istiyorsak, kapsayıcı dive position relative, kapsanan dive position absolute diyoruz. sonrasında top-right-left-bottom ayarlarıyla divimizin içindeki divi hizalayabiliyoruz. Burada mesela bannerımızın içindeki yazıyı hizalıyoruz, sağa sola yukarı ve aşağı olarak. Burada ayrıca left ve right'a 0 verip text-align: center dediğimiz zaman yazılar ortaya gelir. "Position absolute dediğimiz zaman yazımızın alanı kadar yer kaplayacak bu divimiz."-->
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, odio.
+          Deserunt, aut! Doloribus deleniti pariatur eius, accusamus quibusdam
+          odio nostrum vero dolore dicta, quaerat ullam eaque? Officiis adipisci
+          modi dolore?
+        </p>
+      </div>
+    </div>
+
+    <form class="formGeneral">
+      <label>Ad</label>
+      <input
+        type="text"
+        class="formElement"
+        name="firstName"
+        placeholder="Adınızı Giriniz"
+      />
+      <label>Soyad</label>
+      <input
+        type="text"
+        class="formElement"
+        name="lastName"
+        placeholder="Soyadınızı Giriniz"
+      />
+      <label>Şehirler</label>
+      <select class="formElement" name="country">
+        <option value="tr">Türkiye</option>
+        <option value="fr">Français</option>
+        <option value="en">England</option>
+      </select>
+      <input class="formSubmit" type="submit" value="Kaydet" />
+    </form>
+  </body>
+</html>
