@@ -1,0 +1,93 @@
+/*h1 {
+  color: red;
+}
+
+
+.title {
+  color: blue;
+}
+
+#backend {
+  background-color: blueviolet;
+  color: white;
+}
+
+ propertylerin yanına !important yaparak diğerlerine göre ezme işlemi yapabiliyoruz:
+
+color:blue !important; gibi
+
+
+
+h1,
+p,
+h2,
+h3 {
+  text-align: center;
+  color: red;
+}
+
+
+borderlarımızı tam olarak yuvarlak yapmak istiyorsak border-radius'ımızı 50%'ye ayarlayabiliriz.
+
+*/
+/*
+.dotted {
+  border-style: dotted;
+  border-width: thin;
+  border-width: medium;
+  border-width: thick;
+}
+
+.dashed {
+  border-style: dashed;
+  border-width: 4px;
+}
+
+.solid {
+  border-style: solid;
+}
+
+.double {
+  border-style: double;
+
+}
+
+.groove {
+  border-style: groove;
+}
+
+.ridge {
+  border-style: ridge;
+}
+
+.inset {
+  border-style: inset;
+}
+
+.outset {
+  border-style: outset;
+}
+
+.none {
+  border-style: none;
+}
+
+.hidden {
+  border-style: hidden;
+}
+
+.mix {
+  border-style: dotted dashed solid double;
+}
+
+2'li margin yazımı: sırasıyla üst ve alt
+4'lü margin yazımı: sırasıyla üst sağ alt sol 
+margin: 50px 0px 50px 20px;
+
+
+.frt {
+  margin: 50px 0px 50px 20px;
+  border: 1px solid red;
+  padding: 50px 15px 40px 10px;
+}
+*/
