@@ -1,0 +1,19 @@
+.card {
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.bottom {
+  background-color: #e3f2fd;
+  padding: 10px;
+  text-align: center;
+}
+
+.bottomP {
+  padding-top: 10px;
+}
