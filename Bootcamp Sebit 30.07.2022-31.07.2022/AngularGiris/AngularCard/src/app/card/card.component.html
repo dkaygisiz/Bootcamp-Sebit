@@ -1,0 +1,25 @@
+<!--
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title [src]="titleChild"></mat-card-title>
+  </mat-card-header>
+  Burada [src]="post.imageUrl de diyebilirdik string interpolation yerine."
+  <img mat-card-image [src]="imageUrlChild" alt="Photo of a Shiba Inu" />
+  <h3 [src]="usernameChild"></h3>
+  <mat-card-content>
+    <p [src]="contentChild"></p>
+  </mat-card-content>
+</mat-card>
+-->
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ post.title }}</mat-card-title>
+  </mat-card-header>
+  <!-- Burada [src]="post.imageUrl de diyebilirdik string interpolation yerine."-->
+  <img mat-card-image [src]="post.imageUrl" alt="Photo of a Shiba Inu" />
+  <h3>{{ post.username }}</h3>
+  <mat-card-content>
+    <p>{{ post.content }}</p>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,33 @@
+<!--
+<div>
+  <p>İlk Angular Projem</p>
+  {{ dogukan }};
+</div>
+-->
+<!-- Buradaki değişken true ise içindeki div gözükecek. -->
+<!--
+<div *ngIf="isUpdate">
+  <p>True ise</p>
+</div>
+
+<div *ngIf="!isUpdate">
+  <p>False ise</p>
+</div>
+-->
+<!--Buradaki post herhangi bir kelime olabilir. Objectlerin her birini ifade ediyor.-->
+<!---
+<div *ngFor="let post of posts">
+  Buradaki post.title bütün posts objectindeki titleları döndürecek
+  {{ post.title }}
+</div>
+-->
+<div class="container">
+  <div class="row">
+    <!--Burada ngfor kullanarak bütün objectler için tek tek dönmüş olduk-->
+    <div class="col-md-4" *ngFor="let post of posts"></div>
+  </div>
+</div>
+
+<div *ngFor="let post of posts">
+  <app-card [post]="post"></app-card>
+</div>

@@ -1,0 +1,16 @@
+.mat-card-header {
+  justify-content: center;
+}
+.kapsayici {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.example-card {
+  min-width: 300px;
+}
+.example-card {
+  max-width: 400px;
+}
