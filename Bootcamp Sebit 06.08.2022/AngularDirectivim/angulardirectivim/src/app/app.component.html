@@ -1,0 +1,38 @@
+<div class="navbar">
+  <nav>
+    <ul class="pagination">
+      <li
+        class="page-item"
+        (click)="currentPage = currentPage - 1"
+        [ngClass]="currentPage === 0 ? 'disabled' : ''"
+      >
+        <a class="page-link">Önceki</a>
+      </li>
+
+      <li
+        class="page-item"
+        [ngClass]="i === currentPage ? 'active' : ''"
+        *ngFor="let image of images; let i = index"
+      >
+        <!--
+         İlk Yöntemimiz click eventi
+        <a class="page-link" href="#" (click)="onPageChange(i)">{{ i + 1 }}</a>-->
+        <a class="page-link" href="#" (click)="currentPage = i">{{ i + 1 }}</a>
+      </li>
+
+      <li class="page-item">
+        <a
+          class="page-link"
+          href="#"
+          (click)="currentPage = currentPage + 1"
+          [ngClass]="currentPage === images.length - 1 ? 'disabled' : ''"
+          >Sonraki</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+<div>
+  <h4>{{ images[currentPage].title }}</h4>
+  <img [src]="images[currentPage].url" />
+</div>
