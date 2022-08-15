@@ -1,0 +1,20 @@
+<div class="container">
+  <mat-card class="example-card">
+    <mat-form-field>
+      <mat-label>Kullanıcı Adı</mat-label>
+      <input [(ngModel)]="username" matInput />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Başlık</mat-label>
+      <input [(ngModel)]="title" matInput />
+    </mat-form-field>
+    <angular-editor
+      [config]="editorConfig"
+      [placeholder]="'Lütfen Yazınızı Giriniz...'"
+      [(ngModel)]="content"
+    ></angular-editor>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="post()">Kaydet</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

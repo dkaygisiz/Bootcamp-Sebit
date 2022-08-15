@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.author {
+  font-size: 16px;
+  font: weight 700px;
+}
+
+.example-card {
+  cursor: pointer;
+}

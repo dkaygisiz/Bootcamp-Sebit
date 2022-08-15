@@ -1,0 +1,45 @@
+{
+  "articles": [
+    {
+      "author": "asd",
+      "title": "asd",
+      "content": "asd",
+      "comments": [],
+      "id": 1
+    },
+    {
+      "author": "asd",
+      "title": "test yazısı",
+      "content": "contenttttttttttttt",
+      "comments": [
+        {
+          "username": "asdasd",
+          "comment": "asdasd"
+        },
+        {
+          "username": "asdas",
+          "comment": "asd"
+        },
+        {
+          "username": "hello",
+          "comment": "world"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "author": "ııııııııııııııııııııı",
+      "title": "ııııııııııııııııııııııı",
+      "content": "asdasdasdasdasd;",
+      "comments": [],
+      "id": 3
+    },
+    {
+      "author": "asd",
+      "title": "asd",
+      "content": "asd",
+      "comments": [],
+      "id": 4
+    }
+  ]
+}
