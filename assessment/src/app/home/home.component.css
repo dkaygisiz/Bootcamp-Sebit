@@ -1,0 +1,32 @@
+.card {
+  width: auto;
+  cursor: pointer;
+  margin-top: 30px;
+  height: 150px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 1020px;
+}
+
+.card-title {
+  text-align: left;
+  color: #1266f1;
+}

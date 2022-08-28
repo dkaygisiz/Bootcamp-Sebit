@@ -1,0 +1,36 @@
+.home--search {
+  background-color: #1266f1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px;
+}
+
+.search {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+input {
+  height: 60px;
+  padding-left: 50px;
+}
+
+h3 {
+  margin-bottom: 30px;
+  color: white;
+}
+
+img {
+  position: absolute;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  input::placeholder {
+    opacity: 0;
+  }
+}

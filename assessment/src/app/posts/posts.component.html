@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="home-and-component">
+    <p>
+      <a href="/home">Home Page</a> /
+      {{ this.categories[this.categoryIndex].name }}
+    </p>
+  </div>
+  <div class="icon-category-desc">
+    <img
+      src="././assets/{{ this.categories[this.categoryIndex].icon }}"
+      alt=""
+      class="category-icon"
+    />
+    <div class="category-desc">
+      <p class="category-name">
+        {{ this.categories[this.categoryIndex].name }} ({{
+          this.categories[this.categoryIndex].posts.length
+        }})
+      </p>
+      <p class="category-description">
+        {{ this.categories[this.categoryIndex].description }}
+      </p>
+    </div>
+  </div>
+  <div
+    *ngFor="
+      let category of this.categories[this.categoryIndex].posts;
+      let i = index
+    "
+  >
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title" routerLink="'/categoryIndex/'+ i">
+          {{ category.title }}
+        </h3>
+        <p class="card-text">
+          {{ category.description | slice: 0:280 }}...
+          <button type="button" class="btn-xs">read more</button>
+        </p>
+        <div class="author-w-image">
+          <img
+            class="author-image"
+            src="././assets/profile.png"
+            alt=""
+            width="30px"
+          />
+          <div class="author-wo-image">
+            <p class="author-text">
+              Written by <span class="author-name">{{ category.author }}</span>
+            </p>
+            <p>{{ category.date | date: "longDate" }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
